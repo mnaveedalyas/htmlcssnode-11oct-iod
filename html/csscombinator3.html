@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p::first-letter {
+        color: #ff0000;
+        font-size: xx-large;
+      }
+
+      p::first-line {
+        color: #0000ff !important;
+        font-variant: small-caps;
+      }
+
+      h1::before {
+        content: url("media/smiley.gif");
+      }
+      h1::after {
+        content: url("media/smiley.gif");
+      }
+
+      /*marker applied to list */
+      ::marker {
+        color: red;
+        font-size: 20px;
+        margin-left: 60px;
+      }
+
+      ::selection {
+        color: red;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <h1 style="color: #127e3a !important">This is a heading</h1>
+
+    <p>Testing pseudo-element for website development training.</p>
+    <p>
+      Testing pseudo-element for website development training.<br />this is my
+      second line
+    </p>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+  </body>
+</html>

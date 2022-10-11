@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .parent {
+                border: 10px solid rgb(33, 61, 200);
+                margin: 1rem;
+                padding: 2rem 2rem;
+                text-align: center;
+            }
+            #childdiv {
+                display: inline-block;
+                border: 5px solid black;
+                padding: 1rem 1rem;
+                vertical-align: middle;
+                width: 120px; 
+                height:300px;
+            }
+            
+            .child1 {
+                display: inline-block;
+                border: 5px solid red;
+                padding: 1rem 1rem;
+                vertical-align: middle;
+                width: 120px; 
+                height:300px;
+            }
+            .child2 {
+                display: inline-block;
+                border: 5px solid rgb(0, 255, 26);
+                padding: 1rem 1rem;
+                vertical-align: middle;
+                width: 120px; 
+                height:300px;
+            }
+        </style>
+        <title>Excercise for module 1</title>
+    </head>
+    <body>
+        <h1>CSS/HTML - Internal CSS</h1>
+        <div name="parentdiv" id="pardiv" class="parent">
+            <div id="childdiv" >
+                <h3>division 1</h3>
+                <p>testing paragraph</p>
+            </div>
+            <div class="child1">
+                <h3>division 2</h3>
+                <p>testing paragraph</p>
+            </div>
+            <div  id="id1" class="child2">
+                <h3>division 3</h3>
+                <p>testing paragraph</p>
+            </div>
+            <div id="id2"  class="child2">
+                <h3>division 4</h3>
+                <p>testing paragraph</p>
+            </div>
+        </div>
+        <!--
+        <div class="pardiv">
+            <video id="testvideo" width="400" height="300" autoplay>
+                <source src="media/pexels-kelly-lacy-6093291.mp4" type="video/mp4">
+                <source src="media/pexels-kelly-lacy-6093291.mp4" type="video/wav">
+                <p>Browser does not support it</p>
+            </video>
+            <video id="testvideo" width="400" height="300" controls>
+                <source src="media/pexels-itai-perelman-nasich-5659506.mp4" type="video/mp4">
+                <p>Browser does not support it</p>
+            </video>
+        </div>
+        -->
+        <img src="media/myimg.png" alt="my testing img" width="600" height="400">
+    </body>
+</html>

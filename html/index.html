@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <title>Node Application</title>
+    </head>
+    <body>
+        <!--
+        <h2>Node application for institute of data</h2>
+        <p style="border: 1px solid red;">it is my node application for the learning pupose. <br><br> &lt; &gt;it is test web page </p>
+
+        <span style="border: 1px solid red;">it is my node application for the learning pupose. it is test web page </span>
+
+        <div id="cars">
+            <ul>
+                <li>car1</li> 
+                <li>car2</li>
+            </ul>
+        </div>
+        <div id="result" hidden> i am testing time out</div>
+        
+        
+        <div id="cartest" > Static/non Static method test </div>
+        <div id="cartest1" hidden> </div>
+        
+        <p id="demo123" style="color:green">JavaScript can change the style of an HTML element.</p>
+        
+        <button id="greetings" onclick="testGreetings()">Greetings</button>
+
+        <script>
+            function testGreetings(){
+                document.getElementById("demo123").style.color = "red";
+                //alert('Hello world !!!!!!!!!');
+                console.log('Hello world !!!!!!!!!');
+                
+            }
+        </script>
+        -->
+        
+        <form action="test.html" method="post">
+            <label for="myname">Name</label>
+            <input type="text" name="abc1" id="myname"> 
+            <br>
+            <label for="mypassword">Password</label>
+            <input type="password" name="xyz" id="mypassword">
+            <input type="submit" name="mybutton" id="mybutton">
+
+        </form>
+
+        <!--
+        <canvas id="mycanvas" width="500" height="500" style="border:1px solid #000000;">
+        </canvas>
+        -->
+        <!--
+        <div>
+            <button id="btn1">Test1</button>
+            <button id="btn2">Test2</button>
+            <button id="btn3" onclick="testmath()">TestMath</button>
+            <button id="btn4" onclick="testforEach()">ForEach</button>
+            <button id="btn6" onclick="test6()">test6</button>
+            <button id="btn6" onclick="test7()">test7</button>
+            <button id="btn8" onclick="test8()">TimeOut</button>
+            <button id="btn11" onclick="test11()">Test11</button>
+            <button id="staticmethodtest">Static Method</button>
+        </div>
+        -->
+        <iframe src="https://terminustech.co.nz" style="height:500px;width:100%; border: none;" title="iframe testing"></iframe>
+        
+        <script src="resources/jquery-3.6.0.js"></script>
+
+        <script>
+            $(document).ready( function(){
+                $("#staticmethodtest").click( function(){
+                    console.log("staticmethod test is called");
+                    class Car {
+                        constructor(name) {
+                            this.name = name;
+                        }
+                        static hello(x) {
+                            return "Calling Static Method. Hello " + x.name;
+                        }
+                        test(x){
+                            return "Calling nonstatic method with object Hi ----- "+ x.name;
+                        }
+                    }
+                        
+                    let myCar = new Car("Ford");
+                    $("#cartest").html(Car.hello(myCar, "test", "tt", "te", "teee", 1,2,3, 4));
+                    console.log("displayed div cartest");
+                    let myCar1 = new Car("Honda");
+                    $("#cartest1").removeAttr("hidden").html(myCar.test(myCar1));
+                    console.log("displayed div cartest1");
+
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    //alert("test this");
+                    console.log("<br>i am testing it");
+
+                }); 
+            });
+
+            $(document).ready(function(){
+                $("#btn2").click(function(){
+                    //alert("called btn3");
+                    console.log("<br>i am testing it btn2");
+                });    
+            });
+            
+            $(document).ready(function(){
+
+            })
+            
+            function testmath(){
+                var x=10;
+                var y="5";
+                console.log("Multiplication result:"+ (x * y) );
+                console.log("x != y result:"+ (x != y? 'Not Equal':'Equal' ) );
+                console.log("x !== y result:"+ (x !== y? 'Not Equal':'Equal' ) );
+                console.log("x , y result:"+ (x , y) );
+            }
+
+            function testforEach(){
+                const cars = ["Toyota", "Honda", "Hyundai", "saab", "BMW"];
+                let count=0
+                let strlist="";
+                let msg="";
+                cars[100] = "GM";
+                console.log("cars length: "+cars.length);
+                if (cars.length > 0){
+                    strlist="<ul>"
+                    cars.forEach(car => {
+                        strlist += "<li>"+car+"</li>";
+                        console.log(++count +' -> '+ car);
+                    });
+                    strlist += "</ul>"
+                    msg ="List is generated \n";
+                }
+                document.getElementById("cars").innerHTML=strlist;
+                msg +="array content of 1st loop \n";
+                cars.forEach(function(car, index, array, msg){
+                    console.log(index +' --> '+ car +' --> '+array);
+                    msg +=index +' --> '+ car+'\n';
+                });
+
+                msg +="array content of 2nd loop \n";
+                cars.forEach((car, index1, array1, msg) =>{
+                    console.log(index1 +' ---> '+ car +' --> '+array1); 
+                    msg +=index1 +' --> '+ car+'\n';
+                });
+                msg +="Function completed \n";
+                console.log(msg);
+                
+            }
+
+            function test6(){
+                let modal = document.querySelector('#result');
+                //console.log("#result");
+                setTimeout(function(){
+                    //modal.classList.remove('hidden');
+                    modal.removeAttribute("hidden");
+                },2000 );
+                console.log('Results shown');
+            }
+
+            function test7(){
+                class Animal {
+                    static belly = [];
+                    //let foods = [];
+                    eat(){
+                        Animal.belly.push('food');
+                      //  Animal.foods.push('fooditem');
+                    }
+                }
+                let a = new Animal();
+                a.eat();
+                //console.log("a.foods[0]: "+a.foods[0]);
+                //console.log("a.belly[0]: "+a.belly[0]);
+                console.log("Animal.belly[0]: "+Animal.belly[0]);
+            }
+
+            function test8(){
+                //alert('Calling timeout function');
+                for(var i=1; i<=4; i++){
+                    (
+                         function(j){
+                            //console.log(j +"  outside timeout "+ (j*1000) +" \n");
+                            setTimeout(function(){
+                                console.log(j +"  --> "+ (j*1000) +" \n");
+                            }, j*1000);
+                    })(i);
+                    //declare a ananomyous function and call it immediately. 
+                }
+            }
+
+            function test11(){
+                var strom = function(){};
+                strom.prototype.precip = 'rain';
+                var winterstrom = function(){};
+                winterstrom.prototype = new strom();
+                winterstrom.prototype.precip = 'snow';
+                var bob = new winterstrom();
+                console.log("output is :"+ bob.precip);
+                console.log( typeof 42.089);
+
+            }
+
+        </script>
+    </body>
+</html>

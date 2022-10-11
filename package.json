@@ -1,0 +1,22 @@
+{
+  "name": "htmlcssnode-11oct-iod",
+  "version": "1.0.0",
+  "description": "my testing node app",
+  "main": "mod1-node-helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnaveedalyas/htmlcssnode-11oct-iod.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnaveedalyas/htmlcssnode-11oct-iod/issues"
+  },
+  "homepage": "https://github.com/mnaveedalyas/htmlcssnode-11oct-iod#readme",
+  "dependencies": {
+    "sentiment": "^5.0.2"
+  }
+}

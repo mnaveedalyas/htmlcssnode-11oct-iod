@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        /* reset css */
+      * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+        /*
+        .flex-container{
+            display: flex;
+        } 
+        */
+        
+        .flex-container {
+            display: flex;
+            background-color: #f7941d;
+            margin: 20px;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .flex-container > div {
+       
+            color: white;
+            padding: 40px;
+            background-color: #c597ec;
+            margin: 10px;
+            border: 1px solid grey;
+            height: 100px;
+            
+        } 
+       /*
+      .flex-items{
+        
+        height: 500px;
+        width: 20%;
+        /*----
+        Here 
+        first value is flex-grow.
+        Second value is for flex-shrink.
+        And Third value is for flex-basis. Like this
+        flex: flex-grow-value flex-shrink-value flex-bais-value;
+        ----- */
+      /*
+        }
+      /*
+      /* Responsive layout - makes a one column-layout instead of two-column layout */
+
+     
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Flexbox</h1>
+    <div class="flex-container">
+      <div class="flex-items">flex-item1
+        It is useful for responsive layouts. Whenever we resize our screen size or in the small screen sizes, the flex items automatically adjust their position.
+
+Note: By default, flex-wrap is set to nowrap.
+
+Example: I have created six flex items to clearly demonstrate to you. When we set flex-wrap to wrap than the flex items are automatically adjusted.
+
+      </div>
+     
+      <div>flex-item2</div>
+      <div>flex-item3</div>
+      <div>flex-item4</div>
+      <div>flex-item5</div>
+      <div>flex-item6</div>
+      <div>flex-item7</div>
+      <div>flex-item8</div>
+    </div>
+  </body>
+</html>

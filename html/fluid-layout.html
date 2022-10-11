@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <style>
+      
+      #wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        /*width: 960px;*/
+        width: 96%; /* Holding outermost DIV */
+        border: solid 2px black;
+      }
+      #header {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 97.9166667%; /* 940 divided by 960 */
+        border: solid 2px black;
+      }
+      #navigation {
+        padding-bottom: 25px;
+        margin-top: 26px;
+        margin-left: -10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 72.7083333%; /* 698 divided by 960 */
+        border: solid 2px black;
+      }
+      #navigation ul li {
+        display: inline-block;
+      }
+      #content {
+        margin-top: 58px;
+        margin-right: 10px;
+        float: right;
+        width: 72.7083333%; /* 698 divided by 960 */
+        border: solid 2px black;
+      }
+      #sidebar {
+        border-right-color: #e8e8e8;
+        border-right-style: solid;
+        border-right-width: 2px;
+        margin-top: 58px;
+        padding-right: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        float: left;
+        width: 22.7083333%; /* 218 divided by 960 */
+        border: solid 2px black;
+      }
+      #footer {
+        float: left;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        clear: both;
+        width: 97.9166667%; /* 940 divided by 960 */
+        border: solid 2px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- the header and navigation -->
+      <div id="header">
+        <div id="navigation">
+          <ul>
+            <li><a href="#">navigation1</a></li>
+            <li><a href="#">navigation2</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- the sidebar -->
+      <div id="sidebar">
+        <p>here is the sidebar</p>
+      </div>
+      <!-- the content -->
+      <div id="content">
+        <p>here is the content</p>
+      </div>
+      <!-- the footer -->
+      <div id="footer">
+        <p>Here is the footer</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 {
   "name": "htmlcssnode-11oct-iod",
   "version": "1.0.0",
+  "type": "module",
   "description": "my testing node app",
   "main": "mod1-node-helloworld.js",
   "scripts": {

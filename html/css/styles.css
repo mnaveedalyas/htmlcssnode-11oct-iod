@@ -19,7 +19,7 @@ p  {
 }
 .child {
     display: inline-block;
-    border: 5px solid red;
+    border: 5px solid blue;
     padding: 1rem 1rem;
     vertical-align: middle;
     width: 120px; 

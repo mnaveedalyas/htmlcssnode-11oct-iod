@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Hello</title>
+    </head>
+    <body>
+        <h1>Hello world</h1>
+    </body>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+       
+    </script>
+</html>

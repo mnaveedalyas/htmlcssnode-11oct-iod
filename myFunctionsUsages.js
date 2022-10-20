@@ -8,3 +8,5 @@ console.log('sum of '+ a +' and '+ b + ' is : '+sumresult);
 
 let mulresult = getMultiply(a, b);
 console.log('Multiplication of '+ a +' and '+ b + ' is : '+mulresult);
+
+console.log("--------- End of Function  * **** -------");

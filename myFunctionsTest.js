@@ -32,7 +32,7 @@ if (getSum(20, 0/10) == 20){
 }
 
 
-if (getSum(20, 01/0) == 20){
+if (getSum(20, 1/0) == 20){
     console.log('getSum -> Test 6 : Passed');
 }else{
     console.log('getSum -> Test 6 : Failed')

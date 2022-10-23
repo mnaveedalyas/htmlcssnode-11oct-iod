@@ -1,7 +1,7 @@
 //what will be input , what will be output and objective or pupose of this function 
 function getSum(A,B){
     
-    return false;
+    return 0;
     //return A+B;
 }
 

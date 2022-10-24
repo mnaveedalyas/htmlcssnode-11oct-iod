@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>HTML Forms</h2>
+        <!-- If you click the "Submit" button, the form-data will be sent to a page called "/action_page". -->
+        <form action="/action_page">
+            <label for="firstName">First name:
+                <input type="text" id="firstName" name="firstName" value="Joel">
+            </label>
+            <br />
+            <label for="lastName">Last name:
+                <input type="text" id="lastName" name="lastName" value="Doe">
+            </label>
+            <br />
+            <label for="passwd">Password:
+                <input type="password" id="passwd" name="passwd" value="">
+            </label>
+
+            <br />
+            <br />
+            <label for="male">
+                <input type="radio" id="male" value="1" name="gender"> Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" value="2"  name="gender"> Female
+            </label>
+            <label for="others">
+                <input type="radio" id="others" value="0" name="gender"> Others
+            </label>
+            <br />
+            <br />
+            
+            Interests
+            <br />
+            <label for="movies">
+                <input type="checkbox" id="movies" value="1" name="interests"> Movies
+            </label>
+            <label for="books">
+                <input type="checkbox" id="books" value="2"  name="interests"> Books
+            </label>
+            <label for="hoteling">
+                <input type="checkbox" id="hoteling" value="0" name="interests"> Hoteling
+            </label>
+
+            <br />
+            <br />
+            <label for="City"> Select City: 
+                <select name="City">
+                    <option value="Auckland">Auckland</option>
+                    <option value="Auckland">Hamilton</option>
+                    <option value="Auckland">Wellington</option>
+                </select>
+            </label>
+            <br />
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

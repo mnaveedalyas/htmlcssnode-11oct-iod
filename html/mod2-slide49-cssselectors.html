@@ -5,6 +5,7 @@
 * {
   text-align: center;
   color: blue;
+  background-color: azure;
 }
 
 p {
@@ -17,10 +18,17 @@ p {
   color: green;
 }
 
-.center {
+.left {
   text-align: center;
   color: black;
+  font-size: 14px;
 }
+
+.center2 {
+  text-align: left;
+  color: rgb(154, 37, 37);
+}
+
 
 p.mypara1 {
   text-align: center;
@@ -49,12 +57,12 @@ div {
 <body>
 
 <p>This paragraph is with simple selector based on type</p> 
-<p id="mypara">This paragraph is formated with with id selector</p>
+<p id="mypara" >This paragraph is formated with with id selector</p>
 
-<h1 class="center">this paragraph is formated with class selector </h1>
-<p class="center">This paragraph is formatted with  class center</p> 
+<h1 class="center center2" >this paragraph is formated with class selector </h1>
+<p class="center" style="text-align: left; !important">This paragraph is formatted with  class center</p> 
 <p class="mypara1">This paragraph is formatted with class mypara1</p>
-<p class="center" id="mypara2">This paragraph is formatted with class center and id mypara2</p> 
+<p id="mypara2">This paragraph is formatted with class center and id mypara2</p> 
 
 <div>
   <p>i am inside div</p>

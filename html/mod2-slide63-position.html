@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.static {
+  position: static;
+  width: 500px;
+  height: 50px;
+  border: 3px solid #eb2f4e;
+}
+
+div.relative {
+  position: relative;
+  top: 80px;
+  left: 100px;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #1c1fc9;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+div.relative1 {
+  position: relative;
+  top: 200px;
+  left: 100px;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #f00aa3;
+} 
+
+div.fixed {
+  position: fixed;
+  top: 300px;
+  left: 500px;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #503848;
+} 
+
+div.sticky {
+  position: sticky;
+  bottom: 50px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 3px solid #7e9401;
+} 
+
+</style>
+</head>
+<body>
+
+<h2>position: static, relative, absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+<div class="static">This div element has position: <b>static</b></div>
+
+<div class="relative">This div element has position: <b>relative</b>
+  <div class="absolute">This div element has position: <b>absolute</b></div>
+</div>
+
+<div class="relative1">This div element has position: <b>relative</b>
+    <div class="absolute">This div element has position: <b>absolute</b></div>
+  </div>
+
+  <div class="fixed">This div element has position: <b>fixed</b>
+    <div class="absolute">This div element has position: <b>absolute</b></div>
+  </div>
+
+  <div class="sticky"> <b>sticky</b></div>
+</body>
+</html>

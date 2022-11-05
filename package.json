@@ -5,8 +5,8 @@
   "description": "my testing node app",
   "main": "mod1-node-helloworld.js",
   "scripts": {
-    "start": "node myFunctionsUsages.js",
-    "hello": "node mod1-node-helloworld.js",
+    "start": "node app.js",
+    "hello": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

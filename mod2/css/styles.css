@@ -1,0 +1,27 @@
+
+
+h3  {
+    border: 2px solid rgb(12, 6, 105);
+    margin: 2px;
+    color: #d5153f;
+}
+p  {
+    border: 2px solid rgb(12, 6, 105);
+    margin: 1px;
+    color: #005cff;
+}
+
+.parent {
+    border: 10px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.child {
+    display: inline-block;
+    border: 5px solid blue;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    width: 120px; 
+    height:300px;
+}
